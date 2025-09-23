@@ -60,7 +60,7 @@
   <body>
        <div id="scan-message">
       Bsuca alguno de estos targets y apunta tu cámara hacia ellos para comenzar
-      <img id="scan-image" src="./Ballena3.png" alt="Target a escanear">
+      <img id="scan-image" src="./Jirafa.jpeg" alt="Target a escanear">
     </div>
 
     <div id="menu">
@@ -80,7 +80,7 @@
     <div id="model-switch"></div>
 
     <a-scene
-      mindar-image="imageTargetSrc: ./targets.mind; maxTrack: 2"
+      mindar-image="imageTargetSrc: ./targets (3).mind; maxTrack: 2"
       color-space="sRGB"
       renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false"
@@ -88,11 +88,11 @@
     >
       <a-assets>
         <!-- M_B -->
-        <a-asset-item id="WhaleModel1" src="./WhaleO1.glb"></a-asset-item>
-        <a-asset-item id="WhaleModel2" src="./WhaleO3.glb"></a-asset-item>
+        <a-asset-item id="WhaleModel1" src="./Giraffe.glpb"></a-asset-item>
+        <a-asset-item id="WhaleModel2" src="./Giraffe (1).glb"></a-asset-item>
         <!-- M _P -->
-        <a-asset-item id="OctopusModel1" src="./Octopus.glb"></a-asset-item>
-        <a-asset-item id="OctopusModel2" src="./Octopus(1).glb"></a-asset-item>
+        <a-asset-item id="OctopusModel1" src="./Tiger.glb"></a-asset-item>
+        <a-asset-item id="OctopusModel2" src="./Tiger (1).glb"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -211,7 +211,7 @@
       });
 
       const scanImage = document.querySelector("#scan-image");
-      const scanImages = ["./Ballena3.png","./OctupusO3.png"];
+      const scanImages = ["./Jirafa.jpeg","./Tigre.jpeg"];
       let scanIndex=0;
       setInterval(()=>{scanIndex=(scanIndex+1)%scanImages.length; scanImage.src=scanImages[scanIndex];},2000);
 
@@ -238,4 +238,5 @@
 
   </script>
   </body>
+
 </html>

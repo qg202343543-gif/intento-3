@@ -145,16 +145,16 @@
 
       const facts = {
         whale: [
-          "La ballena azul puede medir hasta 30 metros de largo y pesar más de 150 toneladas.",
-          "Su corazón puede pesar lo mismo que un coche pequeño.",
-          "Solo su lengua puede pesar lo mismo que un elefante adulto (unas 4 toneladas).",
-          "En una sola bocanada pueden tragar hasta 4 toneladas de agua con presas"
+      "El tigre es el felino más grande del mundo, puede llegar a medir más de 3 metros incluyendo la cola.",
+    "Las rayas de cada tigre son únicas, como nuestras huellas digitales.",
+    "A pesar de su tamaño, los tigres son excelentes nadadores y disfrutan del agua.",
+    "Su rugido puede escucharse hasta a 3 km de distancia."
         ],
         octopus: [
-          "Los pulpos tienen tres corazones y sangre azul.",
-           "Pueden exprimir su cuerpo para pasar por huecos del tamaño de una moneda",
-          "Pueden cambiar de color y textura para camuflarse en menos de un segundo.",
-          "Dos tercios de sus neuronas están en los brazos"
+           "La jirafa es el animal terrestre más alto, alcanzando hasta 6 metros de altura.",
+    "Su lengua puede medir alrededor de 50 cm y es de color oscuro para protegerse del sol.",
+    "Las jirafas duermen muy poco, a veces menos de 2 horas al día.",
+    "Tienen un corazón enorme que bombea la sangre hasta su cabeza a pesar de su largo cuello."
         ]
       };
 
@@ -170,14 +170,14 @@
           menu.style.display = "block"; scanMessage.style.display = "none";
           if (whaleDetected) {
             modelSwitch.innerHTML = `
-           <button onclick="switchWhaleModel(0)">Ballena 1</button>
-           <button onclick="switchWhaleModel(1)">Ballena 2</button>
+           <button onclick="switchWhaleModel(0)">Tigre 1</button>
+           <button onclick="switchWhaleModel(1)">Tigre 2</button>
             `;
             modelSwitch.style.display = "flex";
           } else if (octopusDetected) {
             modelSwitch.innerHTML = `
-           <button onclick="switchOctopusModel(0)">Pulpo 1</button>
-           <button onclick="switchOctopusModel(1)">Pulpo 2</button>
+           <button onclick="switchOctopusModel(0)">Jirafa 1</button>
+           <button onclick="switchOctopusModel(1)">Jirafa 2</button>
             `;
             modelSwitch.style.display = "flex";
           }
@@ -240,6 +240,7 @@
   </body>
 
 </html>
+
 
 
 
